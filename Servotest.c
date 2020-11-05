@@ -5,7 +5,7 @@
 
 void servo_angle(int angle); //Defining a function
 
-int pin = 17;
+int pin = 12;
 
 int  main(void)  
 
