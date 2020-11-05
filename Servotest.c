@@ -1,8 +1,7 @@
 #include <iobb.h>   // A header library to control GPIOs of Beaglebone
 #include <stdio.h>   //Standard C input Output Library 
 #include <time.h>  //Time Library  
-#include <unistd.h> //defines miscellaneous symbolic constants and types, and declares miscellaneous functions
-#include <sys/types.h> //definitions for types like size_t , ssize_t
+
 
 void servo_angle(int angle); //Defining a function
 
