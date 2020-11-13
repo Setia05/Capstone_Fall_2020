@@ -68,11 +68,11 @@ int main(void)
     
     difference = final - init; // Get Absolute time of Echo Pulse
     
-    printf("%d    ",init);
-    printf("%d    ",final);
-    printf("%d    Distance: ",difference); //Print time taken by ultasonic to travel
-    difference = difference/30; // inches to cm
-    printf("%d cm. \n",difference);
+    //printf("%d    ",init);
+    //printf("%d    ",final);
+    //printf("%d    Distance: ",difference); //Print time taken by ultasonic to travel
+    //difference = difference/30; // inches to cm
+    //printf("%d cm. \n",difference);
     
     
     if(difference < 15 && difference > 0 && stab == 1) // If  Ultrasonic value less than 15, (Car sensed )
@@ -134,11 +134,11 @@ int main(void)
     
     difference = final - init; // Get Absolute time of Echo Pulse
     
-    printf("%d    ",init);
-    printf("%d    ",final);
-    printf("%d    Distance: ",difference); //Print time taken by ultasonic to travel
-    difference = difference/30;
-    printf("%d cm. \n",difference);
+    //printf("%d    ",init);
+    //printf("%d    ",final);
+    //printf("%d    Distance: ",difference); //Print time taken by ultasonic to travel
+    //difference = difference/30;
+    //printf("%d cm. \n",difference);
     
     
     if(difference < 15 && difference >0 && stab1 == 1) // If  Ultrasonic value less than 15, (Car sensed )
@@ -160,7 +160,8 @@ int main(void)
     iolib_delay_ms(60);  // Small delay to settle trigger and Echo
     start = 0;
     
-  
+	 
+  iolib_delay_ms(900);
      
    
     
