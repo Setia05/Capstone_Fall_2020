@@ -3,8 +3,6 @@
 #include <unistd.h> //defines miscellaneous symbolic constants and types, and declares miscellaneous functions
 #include <string.h> //C Library for various String Operations
 #include <termios.h> // Contains the definitions used by the terminal I/O interfaces
-
-#include <sys/types.h> //definitions for types like size_t , ssize_t
 #include <sys/stat.h> //header defines the structure of the data returned by the functions fstat(), lstat(), and stat(), give file size
 #include <fcntl.h> // FIle control, Open, close
 
@@ -39,7 +37,7 @@ int bytes_read = 0;
     // Set up the communications options:
     // 9600 baud, 8-bit, enable receiver, no modem control lines
     options.c_cflag = B9600 | CS8 | CREAD | CLOCAL; //Setting Baud Rate and other Parameters
-    options.c_iflag = IGNPAR | ICRNL; // ignore partity errors, CR -> newline
+    options.c_iflag = IGNPAR | ICRNL;
     tcflush(file, TCIFLUSH); // discard file information not transmitted
     tcsetattr(file, TCSANOW, &options); // changes occur immmediately
 
@@ -74,5 +72,5 @@ printf("\n\n\n");
     sleep(5);
 }
 
-    close(file); //Close the file at last
+    close(file); 
 }
