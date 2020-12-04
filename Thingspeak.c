@@ -42,6 +42,7 @@ int bytes_read = 0;
 
     sleep(1);
     printf("Started\n");
+    scanf("Enter Number of Slots available\n");
     strcpy(buf, "5"); // Copy a string in buf char array
     nbytes = strlen(buf); // Store size of buf array in nbytes
     bytes_written = write(file, buf, nbytes); // Sending message to ESP
